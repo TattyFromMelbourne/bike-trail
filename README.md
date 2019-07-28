@@ -2,8 +2,8 @@
 React.js and Google Maps integration
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![npm react package: v16.8.6](https://img.shields.io/badge/npm%20react%20package%3A-%20v16.8.6-blue.svg?style=flat)](https://www.npmjs.com/package/react)
-[![npm google-map-react package: v1.1.4](https://img.shields.io/badge/google--map--react%20package-v1.1.4-blue.svg?style=flat)](https://www.npmjs.com/package/google-map-react)
+[![react package: v16.8.6](https://img.shields.io/badge/npm%20react%20package%3A-%20v16.8.6-blue.svg?style=flat)](https://www.npmjs.com/package/react)
+[![google-map-react package: v1.1.4](https://img.shields.io/badge/google--map--react%20package-v1.1.4-blue.svg?style=flat)](https://www.npmjs.com/package/google-map-react)
 
 ### Demo
 
