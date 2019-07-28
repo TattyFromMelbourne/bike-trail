@@ -23,6 +23,13 @@ Tatiana Lenz
 git clone https://github.com/TattyFromMelbourne/bike-trail
 cd bike-trail
 npm install
+touch .env
+```
+
+You will also need to define the following environment variable in your  *__.env__* file:-
+
+```
+REACT_APP_GOOGLE_API_KEY='<your Google Maps API Key>'
 ```
 
 To run in development mode:-
@@ -30,12 +37,12 @@ To run in development mode:-
 ```bash
 npm start
 ```
-To make a production build, edit the *__package.json__* file and change the following line to what is appropriate for your environment:-
-
+To make a production build, edit the *__package.json__* file and change the following to what is appropriate for your environment:-
 
 ```bash
 "homepage": "https://lensoftware.com/presentations/2018-05-28/"
-  ```
+```
+
 and then go ahead and run the build:-
 
 ```bash

@@ -31,7 +31,7 @@ class TrailMap extends Component {
     return (
       <div id="mapWrapper">
         <GoogleMap
-          bootstrapURLKeys={{ key: 'your Google API Key here' }}
+          bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_API_KEY }} // eslint-disable-line no-undef
           center={selectedCenter}
           zoom={this.state.zoom}
           options={mapOptions}
