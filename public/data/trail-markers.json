@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Jetnikoff Bicyle Co.",
+    "address": "32 Union St., Brunswick VIC 3056",
+    "imageUrl": "./assets/images/IMG_0002.jpg",
+    "lat": -37.773864,
+    "lng": 144.959186,
+    "description": "They are great, will always let you use their bicycle pump and even give you a recommendation of what you need to pump your tyres to. I ride on a mountain bike and need to keep my tyres at about 60 psi, everyone whizzes past me on their racing bikes though :)"
+  },
+  {
+    "name": "Little Free Library",
+    "imageUrl": "./assets/images/IMG_0001.jpg",
+    "lat": -37.7482699,
+    "lng": 144.9627646,
+    "description": "This is a swap library that is for people's use. I got some amazing finds from there... so thank you"
+  },
+  {
+    "name": "Green Refectory",
+    "address": "115 Sydney Rd., Brunswick VIC 3056",
+    "imageUrl": "./assets/images/IMG_0003.jpg",
+    "lat": -37.774806,
+    "lng": 144.960625,
+    "description": "Great little snacks that are reasonably healthy and reasonably priced. Good for a stop on your ride."
+  },
+  {
+    "name": "Record Paradise",
+    "address": "15 Union St., Brunswick VIC 3056",
+    "imageUrl": "./assets/images/IMG_0004.jpg",
+    "lat": -37.774149,
+    "lng": 144.959292,
+    "description": "As the name says, it's vinyl records and CDs galore. Apparently this shop has been going continuously since 1955, although its former location (prior to 2013) was in St. Kilda. There is also an occasional performance."
+  },
+  {
+    "name": "Beinart Gallery",
+    "address": "1 Sparta Pl., Brunswick VIC 3056",
+    "imageUrl": "./assets/images/IMG_0006.jpg",
+    "lat": -37.766487,
+    "lng": 144.961706,
+    "description": "Amazing little gallery with a whole lot of stuff, focus mainly on contemporary hyperreal and surreal art. Very inspirational."
+  },
+  {
+    "name": "Some Life Advice",
+    "imageUrl": "./assets/images/IMG_0008.jpg",
+    "lat": -37.725355,
+    "lng": 144.962046,
+    "description": "Yo! Follow Yo Heart | Chase Yo Dreams | Face Yos Fears | Don't be afraid to love cos you're 'fraid it'll all end in tears | Free your mind & the rest will follow | When all else fails.. FKIT YOLO"
+  },
+  {
+    "name": "Calendula Patch",
+    "imageUrl": "./assets/images/IMG_0009.jpg",
+    "lat": -37.734128,
+    "lng": 144.963052,
+    "description": "The residents planted these beautiful calendula flowers. There are also signs asking people not to rip them out. It seems like their neighbours are taking note and calendula now dots the entire bike trail."
+  },
+  {
+    "name": "Fawkner Memorial Park",
+    "imageUrl": "./assets/images/IMG_0010.jpg",
+    "lat": -37.713593,
+    "lng": 144.961389,
+    "description": "There is something restful about being in this little green oasis in the densely populated urban setting that is the North. It's the ideal setting to contemplate life ... and death \"... because death is very likely the single best invention of life. It's life's change agent.\" - Steve Jobs"
+  }
+]

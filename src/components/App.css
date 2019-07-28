@@ -1,0 +1,265 @@
+body, #root {
+  overflow-y: hidden;
+}
+
+#loading {
+  position: absolute;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1001;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  transform: none;
+  background-color: #ffffff;
+  border-radius: 0;
+  box-shadow: none;
+  padding-top: calc(50vh - 38px);
+}
+
+#loading div {
+  padding-top: 0.5em;
+}
+
+.orbit-spinner {
+  display: inline-block;
+}
+
+.isHidden {
+  display: none !important;
+}
+
+.isVisible {
+  display: inline !important;
+}
+
+.container {
+  width: 100% !important;
+}
+
+.map {
+  background-color: #f1f1f1;
+  min-height: calc(50vh - 28px);
+}
+
+.trail-markers {
+  background-color: #f1f1f1;
+  height: calc(50vh - 28px);
+}
+
+.trail-markers {
+  position: relative;
+  overflow-y: auto;
+}
+
+.map-marker {
+  height: 40px;
+  width: 30px;
+  background-color: #051937;
+  background-image: -webkit-linear-gradient(top, #051937 0, #007590 100%);
+  background-image: -o-linear-gradient(top, #051937 0, #007590 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #051937), to(#007590));
+  background-image: linear-gradient(to bottom, #051937, #032e4f, #004566, #005c7c, #007590);
+  -webkit-mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
+  mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
+  position: relative;
+  z-index: 1;
+  transform: translate(-15px, -40px);
+}
+
+.map-marker.selected {
+  background-color: #ff0000;
+  background-image: none;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#mapWrapper {
+  height: calc(50vh - 28px);
+  width: 100vw;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.markers-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 -15px;
+  background-color: #EFF1F1;
+}
+
+.marker-image {
+  width: 33%;
+  height: 100px;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  float: left;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.marker-container {
+  font-size: 0.75em;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+}
+
+.marker-title {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.marker-address {
+  font-weight: 500;
+  font-style: italic;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.marker-description {
+  padding: 0 15px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.map-marker-name {
+  margin-top: -35px;
+  margin-left: -50px;
+  background-color: #ffffff;
+  width: 100px;
+  border: 1px solid #051937;
+  border-radius: 4px;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.map-marker-name.selected {
+  border: 2px solid #ff0000;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-body, .modal-footer {
+  background-color: #ffffff;
+}
+
+.modal-header, .modal-header .close {
+  background-image: linear-gradient(to right, #09315e, #004b79, #006790, #0083a4, #00a0b5);
+  color: #ffffff;
+  opacity: 1;
+  text-shadow: none;
+  box-shadow: none;
+  border: 1px solid #051937;
+  background-color: transparent;
+}
+
+.modal-title {
+  line-height: 1.2em !important;
+  font-size: 1.2em !important;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:active:focus,
+.btn-default:active:hover {
+  background-color: transparent;
+  color: #f000c2;
+  border: none;
+  background-image: linear-gradient(to bottom, #051937 0, #007590 100%);
+  background-position: 0, 0 !important;
+  outline-offset: 0;
+  text-shadow: none;
+  box-shadow: none;
+  border: 1px solid #051937;
+}
+
+.modal-content {
+  border: none !important;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.close {
+  background-color: transparent !important;
+  border: none !important;
+  background-image: none !important;
+}
+
+.current {
+  background-color: #ffffff !important;
+  border: 2px solid #ff0000;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  margin-right: 6px;
+}
+
+/* Phones in landscape mode and tablets */
+@media (orientation: landscape) and (max-width: 991.98px), (min-width: 768px) {
+  .map {
+    width: 100%;
+  }
+
+  .marker-container {
+    width: calc(50vw - 16px);
+    font-size: 0.75em;
+  }
+}
+
+/* Desktops */
+@media (min-width: 992px) {
+
+  .marker-container {
+    width: calc(50% - 10px);
+    background-color: transparent;
+    padding: 30px;
+    font-size: 1.0em;
+  }
+
+  .marker-image {
+    width: 33%;
+    width: 100%;
+    height: 200px;
+    margin: 0 0 15px 0;
+  }
+
+  .map {
+    min-height: calc(100vh - 58px);
+  }
+
+  .trail-markers {
+    min-height: calc(100vh - 58px);
+  }
+
+  #mapWrapper {
+    height: calc(100vh - 52px);
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+
+  .marker-description {
+    padding: 0;
+  }
+
+  .current {
+    border: 3px solid #ff0000;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 12px;
+    margin-right: 12px;
+  }
+}
