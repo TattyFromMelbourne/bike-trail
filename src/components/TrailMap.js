@@ -12,7 +12,7 @@ class TrailMap extends Component {
         lat: -37.766487,
         lng: 144.961706
       },
-      zoom: 15
+      zoom: 16
     }
   }
 

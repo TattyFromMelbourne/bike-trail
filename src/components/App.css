@@ -65,6 +65,7 @@ body, #root {
   background-image: linear-gradient(to bottom, #051937, #032e4f, #004566, #005c7c, #007590);
   -webkit-mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
   mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
+  /* mask: url("http://localhost:3000/assets/images/marker.svg") no-repeat center; */
   position: relative;
   z-index: 1;
   transform: translate(-15px, -40px);
@@ -140,7 +141,7 @@ body, #root {
   width: 100px;
   border: 1px solid #051937;
   border-radius: 4px;
-  padding: 5px;
+  padding: 0.75rem;
   position: relative;
   z-index: 1;
 }
