@@ -38,7 +38,7 @@ Please also take a look at the *__package.json__* file and change the following 
 "homepage": "https://lensoftware.com/presentations/2018-05-28/"
 ```
 
-You may also want to change the following in the *__App.css__* file to wherever you might want to serve the map marker image from (or keep it as is):-
+You may also want to change the following lines in the *__App.css__* file to point to your server (or keep as is i.e. the Google Maps marker images will continue to be served from lensoftware.com):-
 ```
 -webkit-mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
 mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
