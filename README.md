@@ -2,8 +2,8 @@
 React.js and Google Maps integration
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![react package: v16.8.6](https://img.shields.io/badge/react%20package%3A-%20v16.8.6-blue.svg?style=flat)](https://www.npmjs.com/package/react)
-[![google-map-react package: v1.1.4](https://img.shields.io/badge/google--map--react%20package-v1.1.4-blue.svg?style=flat)](https://www.npmjs.com/package/google-map-react)
+[![react package: v16.13.1](https://img.shields.io/badge/react%20package%3A-%20v16.13.1-blue.svg?style=flat)](https://www.npmjs.com/package/react)
+[![google-map-react package: v2.0.8](https://img.shields.io/badge/google--map--react%20package-v2.0.8-blue.svg?style=flat)](https://www.npmjs.com/package/google-map-react)
 
 ### Demo
 
@@ -32,18 +32,25 @@ You will also need to define the following environment variable in your  *__.env
 REACT_APP_GOOGLE_API_KEY='<your Google Maps API Key>'
 ```
 
-To run in development mode:-
-
-```bash
-npm start
-```
-To make a production build, edit the *__package.json__* file and change the following to what is appropriate for your environment:-
+Please also take a look at the *__package.json__* file and change the following line to what is appropriate for your environment:-
 
 ```bash
 "homepage": "https://lensoftware.com/presentations/2018-05-28/"
 ```
 
-and then go ahead and run the build:-
+You may also want to change the following in the *__App.css__* file to wherever you might want to serve the map marker image from (or keep it as is):-
+```
+-webkit-mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
+mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
+```
+
+Like any react app created with `create-react-app`, to run in development mode:-
+
+```bash
+npm start
+```
+
+and to create a production build:-
 
 ```bash
 npm run build
