@@ -35,7 +35,7 @@ REACT_APP_GOOGLE_API_KEY='<your Google Maps API Key>'
 Please also take a look at the *__package.json__* file and change the following line to what is appropriate for your environment:-
 
 ```bash
-"homepage": "https://lensoftware.com/bike-trail/"
+"homepage": "https://lensoftware.com.au/bike-trail/"
 ```
 
 You may also want to change the following lines in the *__src/components/App.css__* file:-
