@@ -1,4 +1,5 @@
-body, #root {
+body,
+#root {
   overflow-y: hidden;
 }
 
@@ -61,10 +62,23 @@ body, #root {
   background-color: #051937;
   background-image: -webkit-linear-gradient(top, #051937 0, #007590 100%);
   background-image: -o-linear-gradient(top, #051937 0, #007590 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #051937), to(#007590));
-  background-image: linear-gradient(to bottom, #051937, #032e4f, #004566, #005c7c, #007590);
-  -webkit-mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
-  mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #051937),
+    to(#007590)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    #051937,
+    #032e4f,
+    #004566,
+    #005c7c,
+    #007590
+  );
+  -webkit-mask: url("/bike-trail/assets/images/marker.svg") no-repeat center;
+  mask: url("/bike-trail/assets/images/marker.svg") no-repeat center;
   position: relative;
   z-index: 1;
   transform: translate(-15px, -40px);
@@ -90,7 +104,7 @@ body, #root {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 -15px;
-  background-color: #EFF1F1;
+  background-color: #eff1f1;
 }
 
 .marker-image {
@@ -153,12 +167,21 @@ body, #root {
   z-index: 1000;
 }
 
-.modal-body, .modal-footer {
+.modal-body,
+.modal-footer {
   background-color: #ffffff;
 }
 
-.modal-header, .modal-header .close {
-  background-image: linear-gradient(to right, #09315e, #004b79, #006790, #0083a4, #00a0b5);
+.modal-header,
+.modal-header .close {
+  background-image: linear-gradient(
+    to right,
+    #09315e,
+    #004b79,
+    #006790,
+    #0083a4,
+    #00a0b5
+  );
   color: #ffffff;
   opacity: 1;
   text-shadow: none;
@@ -223,12 +246,11 @@ body, #root {
 
 /* Desktops */
 @media (min-width: 992px) {
-
   .marker-container {
     width: calc(50% - 10px);
     background-color: transparent;
     padding: 30px;
-    font-size: 1.0em;
+    font-size: 1em;
   }
 
   .marker-image {

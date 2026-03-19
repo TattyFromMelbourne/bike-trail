@@ -1,7 +1,7 @@
 {
   "name": "bike-trail",
   "version": "1.0.0",
-  "homepage": "https://www.lensoftware.com/presentations/2018-05-28",
+  "homepage": "https://www.lensoftware.com.au/bike-trail",
   "private": true,
   "dependencies": {
     "google-map-react": "^2.0.8",

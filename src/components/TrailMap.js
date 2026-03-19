@@ -1,37 +1,43 @@
-import React, { Component } from 'react'
-import GoogleMap from 'google-map-react';
-import MapMarker from './MapMarker'
-import MapStyle from './MapStyle.json'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import GoogleMap from "google-map-react";
+import MapMarker from "./MapMarker";
+import MapStyle from "./MapStyle.json";
+import PropTypes from "prop-types";
 
 class TrailMap extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       center: {
         lat: -37.766487,
         lng: 144.961706
       },
       zoom: 16
-    }
+    };
   }
 
   render() {
-    let selectedCenter
+    let selectedCenter;
     if (this.props.selectedMarker != null) {
-      selectedCenter = { lat: this.props.selectedMarker.lat, lng: this.props.selectedMarker.lng }
+      selectedCenter = {
+        lat: this.props.selectedMarker.lat,
+        lng: this.props.selectedMarker.lng
+      };
     } else {
-      selectedCenter = this.state.center
+      selectedCenter = this.state.center;
     }
 
     const mapOptions = {
       styles: MapStyle
-    }
+    };
 
     return (
       <div id="mapWrapper">
         <GoogleMap
-          bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_API_KEY }} // eslint-disable-line no-undef
+          bootstrapURLKeys={{
+            key: process.env.REACT_APP_GOOGLE_API_KEY,
+            loading: "async"
+          }} // eslint-disable-line no-undef
           center={selectedCenter}
           zoom={this.state.zoom}
           options={mapOptions}
@@ -47,11 +53,11 @@ class TrailMap extends Component {
                 selectedMarker={this.props.selectedMarker}
                 handleSelection={this.props.handleSelection}
               />
-            )
+            );
           })}
         </GoogleMap>
       </div>
-    )
+    );
   }
 }
 
@@ -61,5 +67,4 @@ TrailMap.propTypes = {
   markers: PropTypes.array.isRequired
 };
 
-
-export default TrailMap
+export default TrailMap;

@@ -7,7 +7,7 @@ React.js and Google Maps integration
 
 ### Demo
 
-[https://www.lensoftware.com/presentations/2018-05-28/](https://www.lensoftware.com/presentations/2018-05-28/)
+[https://lensoftware.com.au/bike-trail](https://lensoftware.com.au/bike-trail/)
 
 ### Author
 
@@ -35,13 +35,13 @@ REACT_APP_GOOGLE_API_KEY='<your Google Maps API Key>'
 Please also take a look at the *__package.json__* file and change the following line to what is appropriate for your environment:-
 
 ```bash
-"homepage": "https://lensoftware.com/presentations/2018-05-28/"
+"homepage": "https://lensoftware.com/bike-trail/"
 ```
 
-You may also want to change the following lines in the *__App.css__* file to point to your server (or keep as is i.e. the Google Maps marker images will continue to be served from lensoftware.com):-
+You may also want to change the following lines in the *__src/components/App.css__* file:-
 ```
--webkit-mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
-mask: url("https://www.lensoftware.com/presentations/2018-05-28/assets/images/marker.svg") no-repeat center;
+  -webkit-mask: url("/bike-trail/assets/images/marker.svg") no-repeat center;
+  mask: url("/bike-trail/assets/images/marker.svg") no-repeat center;
 ```
 
 Like any react app created with `create-react-app`, to run in development mode:-
@@ -54,5 +54,4 @@ and to create a production build:-
 
 ```bash
 npm run build
-
 ```
